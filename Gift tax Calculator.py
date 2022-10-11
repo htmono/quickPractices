@@ -16,6 +16,7 @@ elif giftValue >= 5000:
     elif giftValue >= 1000000:
         taxAmount = 142100 + (giftValue - 1000000) * 0.17
 
+
 if taxAmount > 0:
     print(f"Amount of tax: {taxAmount} euros")
 
