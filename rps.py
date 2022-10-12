@@ -1,19 +1,15 @@
 # Rock Paper Scissor game from scratch.
 import random
-# assign rock, paper and scissors as values
-rock = 1
-paper = 2
-scissors = 3
 
-# Make computer choose one of three randomly (import random first?)
+# Make list out of the possible choices player and computer can make
 moves = ["rock", "paper", "scissors"]
-opChoose = random.choice(moves)
 
 # make variable for players pick and ask player for input
 pcChoose = input("Which do you choose? (rock/paper/scissors ")
+# make variable for computer to pick
+opChoose = random.choice(moves)
 
-# deal with assigning a winner
-
+# deal with finding out the winner
 print(f"You chose {pcChoose} and computer chose {opChoose}")
 if pcChoose == opChoose:
     print("It's a tie!")
