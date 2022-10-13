@@ -7,16 +7,16 @@ moves = ["rock", "paper", "scissors"]
 # Set up a while-loop for game to continue as long as player wants it.
 while True:
 
-# make variable for players pick and ask player for input
+    # make variable for players pick and ask player for input
     pcChoose = input("Which do you choose? (rock/paper/scissors \nIf you want to quit, you can type in 'quit' or 'q' ")
 
-# make variable for computer to pick
+    # make variable for computer to pick
     opChoose = random.choice(moves)
 
-# Player can quit the game by typing out "quit" or "q"
+    # Player can quit the game by typing out "quit" or "q"
     if pcChoose == "quit" or pcChoose == "q":
         break
-# deal with finding out the winner
+    # deal with finding out the winner
     print(f"You chose {pcChoose} and computer chose {opChoose}")
     if pcChoose == opChoose:
         print("It's a tie!")
@@ -37,3 +37,5 @@ while True:
             print("Computer won!")
         elif opChoose == "paper":
             print("You won!")
+    # dotted lines for visibility
+    print("-" * 10)
