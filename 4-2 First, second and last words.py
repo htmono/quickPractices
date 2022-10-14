@@ -1,7 +1,7 @@
 # Write your solution here
 
-def first_word(text):
-    sanat = text.split()
+def first_word(x):
+    sanat = x.split()
     return(sanat[0])
 
 def second_word(x):
